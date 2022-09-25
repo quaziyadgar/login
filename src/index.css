@@ -1,13 +1,133 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Roboto, Tahoma;
 }
+body{
+  background-color: #e1e1e1;
+}
+.container{
+  /* border: 2px solid #0eca98; */
+  height: max-content;
+  width: 95%;
+  margin: 10vh auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px grey;
+  display: flex;
+  flex-wrap: wrap;
+}
+.signIn{
+  /* border: 2px solid yellow; */
+  border-radius: 10px 0 0 10px;
+  padding: 10px;
+  text-align: center;
+  width: 55%;
+  background-color: white;
+}
+.label{
+  font-size: small;
+  float: inline-start;
+  /* border: 1px solid darkblue; */
+  display: flex;
+}
+.label>p{
+  display: inline;
+  color: #0eca98;
+  font-weight: 600;
+  font-size: small;
+}
+.title{
+  color: #0eca98;
+  text-align: center;
+  margin-top: 30px;
+  font-size: x-large;
+  font-weight: bold;
+}
+.underline{
+  width: 30px;
+  border: 1px solid #0eca98;
+  margin: 10px auto;
+}
+.socialMedia{
+  text-align: center;
+}
+.socialMedia>i{
+  padding:0 10px;
+}
+.socialMedia + p{
+  color: rgb(166, 159, 159);
+  padding: 10px 0;
+}
+.inputLogin{
+  /* border: 1px solid slategray; */
+}
+.inputLogin>input{
+  display: flex;
+  margin: 0 auto 10px;
+  border: 1px solid rgb(218, 213, 213);
+  width: 50%;
+  padding: 5px;
+  border-radius: 5px;
+}
+input[type=text]:focus {
+  border: 2px solid #0eca98;
+}
+.inputLogin>span{
+  display: flex;
+  flex-wrap: nowrap;
+  /* border: 1px solid rebeccapurple; */
+  font-size: x-small;
+  font-weight: 600;
+  width: 50%;
+  margin: 0 auto;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.rightInp{
+  margin-right: 0;
+  /* border: 2px solid black; */
+  padding-left: 8vw;
+}
+.inputLogin>button{
+  margin-top: 5px;
+  width: 25%;
+  border-radius: 20px;
+  padding: 5px;
+  border: none;
+  background-color: #0eca98;
+  color: white;
+}
+.footer{
+  margin-top: 40px;
+  font-size: x-small;
+  color: rgb(166, 159, 159);
+}
+.signUp{
+  background-color: #0eca98;
+  width: 45%;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  text-align: center;
+}
+.intro-title{
+  margin-top: 10vh;
+  font-size: x-large;
+  font-weight: bold;
+}
+.underline2{
+  width: 30px;
+  border: 1px solid white;
+  margin: 10px auto;
+}
+.intro{
+  padding: 0 50px;
+}
+.signUp>button{
+  margin-top: 3vh;
+  width: 25%;
+  border-radius: 20px;
+  padding: 5px;
+  border: 1px solid white;
+  background-color: #0eca98;
+  color: white;
 }
